@@ -17,6 +17,7 @@ public class CityNameUpdater : MonoBehaviour
     public TextMeshProUGUI cityCommerce;
     public TextMeshProUGUI cityman;
     public TextMeshProUGUI citynoman;
+    public TextMeshProUGUI cityinfluenceCity;
     public Cityifo cityifoScript;
     public int citycodeifom;
 
@@ -68,6 +69,7 @@ public class CityNameUpdater : MonoBehaviour
             cityCommerce.text = "Commerce: " + cityData.Commerce.ToString();
             cityman.text = "Male: " + cityData.man.ToString();
             citynoman.text = "Female: " + cityData.noman.ToString();
+            cityinfluenceCity.text = "세력: " + cityData.cityinfluencname;
         }
         else
         {

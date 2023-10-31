@@ -301,7 +301,7 @@
       "DisplayName": "Writing boot.config_tyr4.info",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 17497,
+      "PayloadLength": 16678,
       "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
       "Inputs": [],
       "Outputs": [
@@ -395,27 +395,27 @@
         "C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.AI.Navigation.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.Animation.Runtime.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.Tilemap.Extras.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.Common.Runtime.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.PixelPerfect.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.Unsafe.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.AI.Navigation.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.Animation.Runtime.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.Tilemap.Extras.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.Common.Runtime.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.PixelPerfect.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll",
+        "D:/GameMadeSam/SamGug/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll",
+        "D:/GameMadeSam/SamGug/Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
+        "D:/GameMadeSam/SamGug/Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.Unsafe.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/System.Runtime.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/netstandard.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Mono.Security.dll",
@@ -1322,7 +1322,7 @@
       "DisplayName": "Copying Assembly-CSharp.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Assembly-CSharp.dll"
@@ -1334,7 +1334,7 @@
       "DisplayName": "Copying Unity.2D.IK.Runtime.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.2D.IK.Runtime.dll"
@@ -1346,7 +1346,7 @@
       "DisplayName": "Copying Unity.AI.Navigation.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.AI.Navigation.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.AI.Navigation.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.AI.Navigation.dll"
@@ -1358,7 +1358,7 @@
       "DisplayName": "Copying Unity.Burst.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.Burst.dll"
@@ -1370,7 +1370,7 @@
       "DisplayName": "Copying Unity.VisualScripting.Core.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.VisualScripting.Core.dll"
@@ -1382,7 +1382,7 @@
       "DisplayName": "Copying Unity.2D.Animation.Runtime.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.Animation.Runtime.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.Animation.Runtime.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.2D.Animation.Runtime.dll"
@@ -1394,7 +1394,7 @@
       "DisplayName": "Copying Unity.2D.Tilemap.Extras.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.Tilemap.Extras.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.Tilemap.Extras.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.2D.Tilemap.Extras.dll"
@@ -1406,7 +1406,7 @@
       "DisplayName": "Copying Unity.VisualScripting.Flow.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.VisualScripting.Flow.dll"
@@ -1418,7 +1418,7 @@
       "DisplayName": "Copying Unity.InternalAPIEngineBridge.001.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.InternalAPIEngineBridge.001.dll"
@@ -1430,7 +1430,7 @@
       "DisplayName": "Copying Unity.2D.Common.Runtime.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.Common.Runtime.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.Common.Runtime.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.2D.Common.Runtime.dll"
@@ -1442,7 +1442,7 @@
       "DisplayName": "Copying UnityEngine.UI.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/UnityEngine.UI.dll"
@@ -1454,7 +1454,7 @@
       "DisplayName": "Copying Unity.Timeline.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.Timeline.dll"
@@ -1466,7 +1466,7 @@
       "DisplayName": "Copying Unity.Collections.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.Collections.dll"
@@ -1478,7 +1478,7 @@
       "DisplayName": "Copying Unity.2D.SpriteShape.Runtime.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.2D.SpriteShape.Runtime.dll"
@@ -1490,7 +1490,7 @@
       "DisplayName": "Copying Unity.2D.PixelPerfect.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.PixelPerfect.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.PixelPerfect.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.2D.PixelPerfect.dll"
@@ -1502,7 +1502,7 @@
       "DisplayName": "Copying Unity.Mathematics.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.Mathematics.dll"
@@ -1514,7 +1514,7 @@
       "DisplayName": "Copying Unity.TextMeshPro.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.TextMeshPro.dll"
@@ -1526,7 +1526,7 @@
       "DisplayName": "Copying Unity.VisualScripting.State.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll"
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.VisualScripting.State.dll"
@@ -1538,7 +1538,7 @@
       "DisplayName": "Copying Unity.Collections.LowLevel.ILSupport.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll"
+        "D:/GameMadeSam/SamGug/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll"
@@ -1550,7 +1550,7 @@
       "DisplayName": "Copying Unity.VisualScripting.Antlr3.Runtime.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+        "D:/GameMadeSam/SamGug/Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll"
@@ -1562,7 +1562,7 @@
       "DisplayName": "Copying Unity.Burst.Unsafe.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.Unsafe.dll"
+        "D:/GameMadeSam/SamGug/Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.Unsafe.dll"
       ],
       "Outputs": [
         "D:/게임 제작 완성본/romance of the three kingdoms xiii_Data/Managed/Unity.Burst.Unsafe.dll"
@@ -1837,8 +1837,8 @@
       "Annotation": "GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker",
       "DisplayName": "Running Burst Compiler",
       "ActionType": "RunRPCCommand",
-      "PayloadOffset": 17703,
-      "PayloadLength": 16547,
+      "PayloadOffset": 16884,
+      "PayloadLength": 15728,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Da",
       "Action": "GenerateNativePluginsForAssemblies",
       "Inputs": [
@@ -1910,27 +1910,27 @@
         "C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.AI.Navigation.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.Animation.Runtime.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.Tilemap.Extras.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.Common.Runtime.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.2D.PixelPerfect.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.Unsafe.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.IK.Runtime.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.AI.Navigation.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.Animation.Runtime.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.Tilemap.Extras.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.Common.Runtime.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/UnityEngine.UI.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.2D.PixelPerfect.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
+        "D:/GameMadeSam/SamGug/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.State.dll",
+        "D:/GameMadeSam/SamGug/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll",
+        "D:/GameMadeSam/SamGug/Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
+        "D:/GameMadeSam/SamGug/Library/PackageCache/com.unity.burst@1.8.9/Unity.Burst.Unsafe.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/System.Runtime.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Facades/netstandard.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Mono.Security.dll",
@@ -1954,7 +1954,7 @@
         "C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/System.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/mscorlib.dll",
         "ProjectSettings/BurstAotSettings_StandaloneWindows.json",
-        "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/PackageCache/com.unity.burst@1.8.9/.Runtime/bcl.exe"
+        "D:/GameMadeSam/SamGug/Library/PackageCache/com.unity.burst@1.8.9/.Runtime/bcl.exe"
       ],
       "Outputs": [],
       "TargetDirectories": [
@@ -2007,7 +2007,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
       "DisplayName": "Writing app.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 34339,
+      "PayloadOffset": 32701,
       "PayloadLength": 49,
       "PayloadDebugContentSnippet": "DefaultCompany\nromance of the ",
       "Inputs": [],
@@ -2689,6 +2689,6 @@
   "SharedResources": [],
   "Scanners": [],
   "Identifier": "Library/Bee/Playerea02df26.dag.json",
-  "PayloadsFile": "D:/삼국지 게임자료/romance of the three kingdoms xiii/Library/Bee/Playerea02df26.dag.payloads",
+  "PayloadsFile": "D:/GameMadeSam/SamGug/Library/Bee/Playerea02df26.dag.payloads",
   "RelativePathToRoot": "../.."
 }

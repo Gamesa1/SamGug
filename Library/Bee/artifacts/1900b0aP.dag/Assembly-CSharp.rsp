@@ -321,6 +321,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/JSON/JSONObject.cs"
 "Assets/JSON/VectorTemplates.cs"
+"Assets/Script/ButtonHighlight.cs"
 "Assets/Script/Cityifo.cs"
 "Assets/Script/CitynameUpdater.cs"
 "Assets/Script/MainCode.cs"
