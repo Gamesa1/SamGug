@@ -21,6 +21,8 @@ public class CityNameUpdater : MonoBehaviour
     public Cityifo cityifoScript;
     public int citycodeifom;
 
+    public TextMeshProUGUI PlayerInfluences;
+
     void Start()
     {
         cityNameText.text = "낙양";
@@ -70,6 +72,7 @@ public class CityNameUpdater : MonoBehaviour
             cityman.text = "Male: " + cityData.man.ToString();
             citynoman.text = "Female: " + cityData.noman.ToString();
             cityinfluenceCity.text = "세력: " + cityData.cityinfluencname;
+            PlayerInfluences.text = "세력: "+cityifoScript.PlayerInfluencess;
         }
         else
         {

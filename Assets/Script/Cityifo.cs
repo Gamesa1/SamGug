@@ -26,6 +26,9 @@ public class Citydata
 public class Cityifo : MonoBehaviour
 {
 
+    public int PlayerInfluence;
+    public string PlayerInfluencess;
+
     private Vector3 originalScale;
 
     public float highlightedScale = 1.2f; // 강조된 스케일
@@ -152,6 +155,11 @@ public class Cityifo : MonoBehaviour
     void Update()
     {
 
+        //플레이어 세팅
+        if(PlayerInfluence == 10 ){
+
+        }
+
         TextAsset cityInfluenceloadText = Resources.Load<TextAsset>("cityInfluenceload");
         if (cityInfluenceloadText != null)
         {
@@ -174,6 +182,27 @@ public class Cityifo : MonoBehaviour
                                 city.cityinfluencname = parts[1];
                             }
                         }
+                    }
+                }
+            }
+        }
+        if (cityInfluenceloadText != null)
+        {
+            string cityInfluenceloadData = cityInfluenceloadText.text;
+            string[] lines = cityInfluenceloadData.Split('\n');
+
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split(':');
+                if (parts.Length == 2)
+                {
+                    if (int.TryParse(parts[0], out int playerInfluence))
+                    {
+                        string playerInfluencess = parts[1].Trim(); // 세력 이름을 얻습니다.
+
+                        // 여기서 PlayerInfluence와 PlayerInfluencess 변수에 값을 할당합니다.
+                        PlayerInfluence = playerInfluence;
+                        PlayerInfluencess = playerInfluencess;
                     }
                 }
             }
