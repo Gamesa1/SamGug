@@ -26,6 +26,8 @@ public class Citydata
 public class Cityifo : MonoBehaviour
 {
 
+    private string cityInfluenceloadFileName = "cityInfluence_copy.txt";
+
     public int PlayerInfluence;
     public string PlayerInfluencess;
 
@@ -58,6 +60,8 @@ public class Cityifo : MonoBehaviour
 
     private void Awake()
     {
+
+        CopyCityInfluenceFileToStreamingAssets();
         // 세력 번호와 세력 이름을 매핑하는 딕셔너리 초기화
         influenceNames.Add(1, "유비");
         influenceNames.Add(2, "손책");
@@ -85,8 +89,9 @@ public class Cityifo : MonoBehaviour
 
     void Start()
     {
+        
 
-        TextAsset cityInfluenceText = Resources.Load<TextAsset>("cityInfluence");
+        TextAsset cityInfluenceText = Resources.Load<TextAsset>("cityInfluence_copy");
         
         TextAsset cityInfluencecolorText = Resources.Load<TextAsset>("cityInfluencecolor");
 
@@ -155,12 +160,14 @@ public class Cityifo : MonoBehaviour
     void Update()
     {
 
+        
+        LoadCopiedCityInfluenceFileFromStreamingAssets();
         //플레이어 세팅
         if(PlayerInfluence == 10 ){
 
         }
 
-        TextAsset cityInfluenceloadText = Resources.Load<TextAsset>("cityInfluenceload");
+        TextAsset cityInfluenceloadText = Resources.Load<TextAsset>(cityInfluenceloadFileName);
         if (cityInfluenceloadText != null)
         {
             string cityInfluenceloadData = cityInfluenceloadText.text;
@@ -237,8 +244,11 @@ public class Cityifo : MonoBehaviour
 
     public void LoadData()
     {
+        
+        
         for (int code = 1; code <= 54; code++)
         {
+            Citydata cityData = GetCityData(code);
             string filePath = Path.Combine(path, "save" + code + ".json");
             if (File.Exists(filePath))
             {
@@ -355,6 +365,79 @@ public class Cityifo : MonoBehaviour
                 buttonImage.color = influenceColor;
             }
             
+        }
+    }
+    void CopyCityInfluenceFileToStreamingAssets()
+    {
+        string originalFilePath = Path.Combine(Application.dataPath, "Resources/cityInfluence.txt");
+        string copyFilePath = Path.Combine(Application.dataPath, "Resources/cityInfluence_copy.txt");
+        if(!File.Exists(copyFilePath)){
+            if (File.Exists(originalFilePath))
+            {
+                // 원본 파일의 내용을 읽어와서 복사본 파일에 저장
+                string cityInfluenceData = File.ReadAllText(originalFilePath);
+                File.WriteAllText(copyFilePath, cityInfluenceData);
+
+                Debug.Log("cityInfluence.txt를 StreamingAssets 폴더에 복사했습니다.");
+            }
+            else
+            {
+                Debug.LogError("cityInfluence.txt 파일이 존재하지 않습니다.");
+            }
+        }
+        else{
+            Debug.LogError("cityInfluence_copy.txt  파일이 존재합니다.");
+        }
+    }
+
+    void LoadCopiedCityInfluenceFileFromStreamingAssets()
+    {
+        string copyFilePath = Path.Combine(Application.dataPath, "Resources/cityInfluence_copy.txt");
+
+        if (File.Exists(copyFilePath))
+        {
+            // 복사본 파일의 내용을 읽어옴
+            string cityInfluenceData = File.ReadAllText(copyFilePath);
+            Debug.Log("cityInfluence_copy.txt 내용:\n" + cityInfluenceData);
+        }
+        else
+        {
+            Debug.LogError("cityInfluence_copy.txt 파일을 로드할 수 없습니다.");
+        }
+    }
+    void UpdateCopiedCityInfluenceFile(int cityCode, int influenceCode)
+    {
+        string copyFilePath = Path.Combine(Application.dataPath, "Resources/cityInfluence_copy.txt");
+
+        // 파일이 존재하는지 확인
+        if (File.Exists(copyFilePath))
+        {
+            // 기존 내용을 읽어옴
+            string[] lines = File.ReadAllLines(copyFilePath);
+
+            // 해당 도시 코드에 대한 라인을 찾아서 업데이트
+            for (int i = 0; i < lines.Length; i++)
+            {
+                string[] parts = lines[i].Split(':');
+                if (parts.Length == 2)
+                {
+                    if (int.TryParse(parts[0], out int currentCityCode) && currentCityCode == cityCode)
+                    {
+                        // 새로운 세력 코드로 라인을 업데이트
+                        lines[i] = cityCode + ":" + influenceCode;
+                        break;
+                    }
+                }
+            }
+
+            // 업데이트된 내용을 파일에 쓰기
+            File.WriteAllLines(copyFilePath, lines);
+
+            Debug.Log($"도시 {cityCode}의 세력이 {influenceCode}로 업데이트되었습니다.");
+        }
+        else
+        {
+            Debug.LogError("cityInfluence_copy.txt 파일이 존재하지 않습니다.");
         }
     }
 }
