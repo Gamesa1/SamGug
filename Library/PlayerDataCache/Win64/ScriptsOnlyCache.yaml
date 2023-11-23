@@ -6,7 +6,6 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
-    - UnityEngine.U2D.Animation.BufferManager
     - UnityEngine.U2D.Animation.SpriteSkinComposite
     - UnityEngine.U2D.Animation.SpriteSkinUpdateHelper
     Unity.2D.IK.Editor.dll:
@@ -16,7 +15,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -953,7 +951,7 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
-      Hash: e10265e0b1e2aa6a4c4c131b4894a9f7
+      Hash: 17c772d8ee217bc930fc78b6363cbd14
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Cityifo
@@ -1962,5 +1960,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/City.unity
-  playerPath: "D:/\uAC8C\uC784 \uC81C\uC791 \uC644\uC131\uBCF8/romance of the three
-    kingdoms xiii.exe"
+  playerPath: D:/GameMadeSam/SamGugFin/romance of the three kingdoms xiii.exe
