@@ -4293,6 +4293,7 @@ MonoBehaviour:
   cityifoScript: {fileID: 188385411}
   citycodeifom: 0
   PlayerInfluences: {fileID: 514792}
+  Action: {fileID: 1652524470}
 --- !u!114 &188385411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4305,6 +4306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c70a304e3766ecc4e9efa3eb8aced0da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playData:
+    action: 0
   PlayerInfluence: 1
   PlayerInfluencess: 
   highlightedScale: 1.2
@@ -4364,7 +4367,7 @@ MonoBehaviour:
   - {fileID: 2023729459}
   - {fileID: 210434636}
   cities: []
-  citycodeifom: 2
+  citycodeifom: 1
   Cityifom:
     Gold: 0
     population: 0
@@ -4376,8 +4379,8 @@ MonoBehaviour:
     Commerce: 0
     CityCode: 0
     CityName: "\uB3C4\uC2DC"
-    cityinfluence: 0
     cityinfluencname: 
+    cityinfluence: 0
   path: 
 --- !u!1 &204110453
 GameObject:
@@ -32421,8 +32424,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -447.86, y: -87.5}
-  m_SizeDelta: {x: 108.08, y: 50}
+  m_AnchoredPosition: {x: -368.19, y: -87.5}
+  m_SizeDelta: {x: 267.42, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1652524470
 MonoBehaviour:

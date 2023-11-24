@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
+    - UnityEngine.U2D.Animation.BufferManager
     - UnityEngine.U2D.Animation.SpriteSkinComposite
     - UnityEngine.U2D.Animation.SpriteSkinUpdateHelper
     Unity.2D.IK.Editor.dll:
@@ -15,6 +16,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -53,6 +55,7 @@ ScriptsOnlyBuild:
   serializedClasses:
     Assembly-CSharp:
     - Citydata
+    - Playdata
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
     - TMPro.FontAssetCreationSettings
@@ -951,7 +954,7 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
-      Hash: 17c772d8ee217bc930fc78b6363cbd14
+      Hash: defef24fb64259342a9c29e98f4f356a
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Cityifo
@@ -1011,7 +1014,7 @@ ScriptsOnlyBuild:
     className: UnityOnDropdownValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 803404fdd11e0afa9025c5459d4fa98d
+      Hash: 266f6eb499dc472dbda58a5ac8ca015b
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CityNameUpdater

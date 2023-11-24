@@ -23,6 +23,8 @@ public class CityNameUpdater : MonoBehaviour
 
     public TextMeshProUGUI PlayerInfluences;
 
+    public TextMeshProUGUI Action;
+
     void Start()
     {
         cityNameText.text = "낙양";
@@ -61,6 +63,8 @@ public class CityNameUpdater : MonoBehaviour
             // 원하는 도시 데이터에 접근하여 업데이트합니다.
             Citydata cityData = cityList[citycodeifo]; // 예: 리스트의 첫 번째 도시 데이터
 
+            Playdata playData = cityifoScript.playData;
+
             // 도시 이름을 TextMeshProUGUI에 업데이트
             cityGold.text = "Gold: " + cityData.Gold.ToString();
             cityMil.text = "Military: " + cityData.influence.ToString();
@@ -72,7 +76,10 @@ public class CityNameUpdater : MonoBehaviour
             cityman.text = "Male: " + cityData.man.ToString();
             citynoman.text = "Female: " + cityData.noman.ToString();
             cityinfluenceCity.text = "세력: " + cityData.cityinfluencname;
-            PlayerInfluences.text = "세력: "+cityifoScript.PlayerInfluencess;
+            PlayerInfluences.text = "세력: "+ cityifoScript.PlayerInfluencess;
+            Action.text = "행동력: " + playData.action.ToString();
+
+
         }
         else
         {

@@ -23,13 +23,20 @@ public class Citydata
 }
 
 
+[System.Serializable]
+public class Playdata
+{
+    public int action;
+}
 
 public class Cityifo : MonoBehaviour
 {
-    private string cityInfluenceloadFileName = "cityInfluence_copy.txt";
+    [SerializeField]
+    public Playdata playData;
 
     public int PlayerInfluence;
     public string PlayerInfluencess;
+
 
     private Vector3 originalScale;
 
@@ -52,9 +59,9 @@ public class Cityifo : MonoBehaviour
     public static Cityifo instance;
 
     public Citydata Cityifom;
+    
 
     public string path;
-    string filename;
 
     private Button lastHighlightedButton; // 이전에 강조된 버튼을 추적하기 위한 변수
 
@@ -81,26 +88,23 @@ public class Cityifo : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
 
         path = Application.persistentDataPath;
-        filename = "save" + citycodeifom + ".json";
         LoadData(); // 저장된 데이터 로드
     }
 
     void Start()
     {
+        playData = LoadPlayData();
 
-
-        TextAsset cityInfluenceText = Resources.Load<TextAsset>("cityInfluence_copy");
+        string copyFilePath = Path.Combine(Application.persistentDataPath, "cityInfluence_copy.txt");
         TextAsset cityInfluenceTextOrg = Resources.Load<TextAsset>("cityInfluence");
         TextAsset cityInfluencecolorText = Resources.Load<TextAsset>("cityInfluencecolor");
 
-
         string originalFilePath = Path.Combine(Application.dataPath, "Resources/cityInfluence.txt");
-        string copyFilePath = Path.Combine(Application.dataPath, "Resources/cityInfluence_copy.txt");
 
         if(!File.Exists(copyFilePath)){
             if (File.Exists(originalFilePath))
             {
-                string cityInfluenceData = cityInfluenceTextOrg.text;
+                string cityInfluenceData = File.ReadAllText(originalFilePath);
                 string[] lines = cityInfluenceData.Split('\n');
 
                 foreach (string line in lines)
@@ -127,9 +131,9 @@ public class Cityifo : MonoBehaviour
             }
         }
         CopyCityInfluenceFileToStreamingAssets();
-        if (cityInfluenceText != null)
+        if (File.Exists(copyFilePath))
         {
-            string cityInfluenceData = cityInfluenceText.text;
+            string cityInfluenceData = File.ReadAllText(copyFilePath);
             string[] lines = cityInfluenceData.Split('\n');
 
             foreach (string line in lines)
@@ -249,6 +253,7 @@ public class Cityifo : MonoBehaviour
         // Cityifom을 초기화하고 나서 LoadData를 호출
         Cityifom = new Citydata(citycodeifom);
         
+        
         timeSinceLastUpdate += Time.deltaTime;
 
         if (timeSinceLastUpdate >= updateInterval)
@@ -261,6 +266,7 @@ public class Cityifo : MonoBehaviour
 
     public void Save()
     {
+        SavePlayData(playData);
         for (int cityCode = 1; cityCode <= 54; cityCode++)
         {
             SaveData(cityCode);
@@ -276,8 +282,7 @@ public class Cityifo : MonoBehaviour
 
     public void LoadData()
     {
-        
-        
+        LoadPlayData();
         for (int code = 1; code <= 54; code++)
         {
             Citydata cityData = GetCityData(code);
@@ -312,6 +317,28 @@ public class Cityifo : MonoBehaviour
                 };
                 cities.Add(city);
             }
+        }
+    }
+    
+    public void SavePlayData(Playdata playData)
+    {
+        string data = JsonUtility.ToJson(playData);
+        File.WriteAllText(Path.Combine(path, "playData.json"), data);
+        Debug.Log("Play data 저장 완료");
+    }
+
+    public Playdata LoadPlayData()
+    {
+        string filePath = Path.Combine(path, "playData.json");
+        if (File.Exists(filePath))
+        {
+            string data = File.ReadAllText(filePath);
+            return JsonUtility.FromJson<Playdata>(data);
+        }
+        else
+        {
+            Debug.LogError("playData.json 파일이 존재하지 않습니다.");
+            return null;
         }
     }
 
@@ -402,7 +429,7 @@ public class Cityifo : MonoBehaviour
     void CopyCityInfluenceFileToStreamingAssets()
     {
         string originalFilePath = Path.Combine(Application.dataPath, "Resources/cityInfluence.txt");
-        string copyFilePath = Path.Combine(Application.dataPath, "Resources/cityInfluence_copy.txt");
+        string copyFilePath = Path.Combine(Application.persistentDataPath, "cityInfluence_copy.txt");
         if(!File.Exists(copyFilePath)){
             if (File.Exists(originalFilePath))
             {
@@ -410,7 +437,7 @@ public class Cityifo : MonoBehaviour
                 string cityInfluenceData = File.ReadAllText(originalFilePath);
                 File.WriteAllText(copyFilePath, cityInfluenceData);
 
-                Debug.Log("cityInfluence.txt를 StreamingAssets 폴더에 복사했습니다.");
+                Debug.Log("cityInfluence.txt를 Application.persistentDataPath 폴더에 복사했습니다.");
             }
             else
             {
@@ -425,7 +452,7 @@ public class Cityifo : MonoBehaviour
 
     void LoadCopiedCityInfluenceFileFromStreamingAssets()
     {
-        string copyFilePath = Path.Combine(Application.dataPath, "Resources/cityInfluence_copy.txt");
+        string copyFilePath = Path.Combine(Application.persistentDataPath, "cityInfluence_copy.txt");
 
         if (File.Exists(copyFilePath))
         {
@@ -440,7 +467,7 @@ public class Cityifo : MonoBehaviour
 
     void UpdateCityInfluenceFileFromJson()
     {
-        string copyFilePath = Path.Combine(Application.dataPath, "Resources/cityInfluence_copy.txt");
+        string copyFilePath = Path.Combine(Application.persistentDataPath, "cityInfluence_copy.txt");
 
         // 파일이 존재하는지 확인
         if (File.Exists(copyFilePath))
@@ -474,6 +501,11 @@ public class Cityifo : MonoBehaviour
         {
             Debug.LogError("cityInfluence_copy.txt 파일이 존재하지 않습니다.");
         }
+    }
+
+    public void InternalAffairs()
+    {
+        
     }
 
 }
