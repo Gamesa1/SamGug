@@ -54,9 +54,9 @@ public class Citydata
 [System.Serializable]
 public class Playdata
 {
-    public int action;
-    public int playerinCity; //플레이어가 있는 도시
-    public int playCity; 
+    public int action=0;
+    public int playerinCity=0; //플레이어가 있는 도시
+    public int playCity=0; 
 
     public Playdata()
     {
