@@ -9,16 +9,44 @@ using UnityEngine.UI;
 [System.Serializable]
 public class Citydata
 {
-    public int Gold, population, influence, develop, man, noman, Safety, Commerce, CityCode;
+    private Cityifo cityifo;
+    public int Gold, population, influence, develop, man, noman, Safety, Commerce, CityCode, Agriculture;
     public string CityName = "도시";
     public string cityinfluencname; // 세력 이름을 저장하는 변수
     public int cityinfluence;
 
-
     public Citydata(int cityCode)
     {
         CityCode = cityCode;
-        CityName = "도시 " + cityCode;
+
+        // cityCodematch.txt 파일을 읽어옵니다.
+        TextAsset cityCodeMatchText = Resources.Load<TextAsset>("cityCodematch");
+        if (cityCodeMatchText != null)
+        {
+            string cityCodeMatchData = cityCodeMatchText.text;
+            string[] lines = cityCodeMatchData.Split('\n');
+
+            foreach (string line in lines)
+            {
+                // 각 라인을 파싱하여 도시 코드와 도시 이름을 얻습니다.
+                string[] parts = line.Split(':');
+                if (parts.Length == 2)
+                {
+                    if (int.TryParse(parts[0], out int parsedCityCode))
+                    {
+                        if (parsedCityCode == cityCode) // 현재 도시 코드와 일치하는 도시 이름을 찾았다면
+                        {
+                            CityName = parts[1].Trim(); // 도시 이름을 얻습니다.
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        else
+        {
+            Debug.LogError("cityCodematch.txt 파일이 존재하지 않습니다.");
+        }
     }
 }
 
@@ -27,7 +55,18 @@ public class Citydata
 public class Playdata
 {
     public int action;
+    public int playerinCity; //플레이어가 있는 도시
+    public int playCity; 
+
+    public Playdata()
+    {
+        action = 1;
+        playerinCity = 1;
+        playCity = 1;
+    }
+
 }
+
 
 public class Cityifo : MonoBehaviour
 {
@@ -37,6 +76,7 @@ public class Cityifo : MonoBehaviour
     public int PlayerInfluence;
     public string PlayerInfluencess;
 
+    public GameObject CityInCurrect;
 
     private Vector3 originalScale;
 
@@ -54,12 +94,11 @@ public class Cityifo : MonoBehaviour
     }
     public List<Citydata> cities = new List<Citydata>();
 
-    public int citycodeifom = 2;
-
+    public int citycodeifom;
     public static Cityifo instance;
 
     public Citydata Cityifom;
-    
+    public bool PlayerMove = false;
 
     public string path;
 
@@ -86,7 +125,9 @@ public class Cityifo : MonoBehaviour
             Destroy(instance.gameObject);
         }
         DontDestroyOnLoad(this.gameObject);
-
+        if(playData.playerinCity == 0 || playData.playCity == 0){
+            playData = new Playdata();
+        }
         path = Application.persistentDataPath;
         LoadData(); // 저장된 데이터 로드
     }
@@ -266,11 +307,11 @@ public class Cityifo : MonoBehaviour
 
     public void Save()
     {
-        SavePlayData(playData);
         for (int cityCode = 1; cityCode <= 54; cityCode++)
         {
             SaveData(cityCode);
         }
+        SavePlayData(playData);
         Debug.Log("저장 완료");
     }
 
@@ -310,6 +351,7 @@ public class Cityifo : MonoBehaviour
                     population = UnityEngine.Random.Range(1000, 10000),
                     influence = UnityEngine.Random.Range(100, 1000),
                     develop = UnityEngine.Random.Range(1000, 10000),
+                    Agriculture =UnityEngine.Random.Range(1000, 10000),
                     man = UnityEngine.Random.Range(100, 1000),
                     noman = UnityEngine.Random.Range(1000, 10000),
                     Safety = UnityEngine.Random.Range(100, 1000),
@@ -318,7 +360,9 @@ public class Cityifo : MonoBehaviour
                 cities.Add(city);
             }
         }
+
     }
+
     
     public void SavePlayData(Playdata playData)
     {
@@ -341,6 +385,16 @@ public class Cityifo : MonoBehaviour
             return null;
         }
     }
+/**
+    private Playdata GetPalyData()
+    {
+        foreach(Playdata playdata in playData)
+        {
+            return playdata;
+        }
+    } **/
+
+
 
     private Citydata GetCityData(int cityCode)
     {
@@ -503,9 +557,69 @@ public class Cityifo : MonoBehaviour
         }
     }
 
-    public void InternalAffairs()
+    //여기서부터 게임 플레이에 지장이 가는 버튼 함수
+
+    public void ChangePlayCity(int newCity) // 지금 보고있는 플레이어 도시 버튼누르면 바꾸기
     {
+        playData.playCity = newCity;
+    }
+
+    //인사
+    public void ClickMove(){
+        PlayerMove = true;
+    }
+    
+    public void Move(int where){
+        if(PlayerMove)
+        {
+            playData.playerinCity = where;
+            PlayerMove = false;
+        }
+    }
+
+    // 여기서 부터는 내정
+
+    public void Internaltechnology()
+    {
+        int cityCode = playData.playerinCity;
         
+        Citydata cityData = GetCityData(cityCode);
+        if(playData.playerinCity == playData.playCity)
+        {
+            if(cityData != null)
+            {
+                cityData.develop += 10;
+            }
+            else
+            {
+                Debug.LogError("도시 데이터를 찾을 수 없습니다. 도시 코드를 확인해 주세요.");
+            }
+        }
+        else
+        {
+            CityInCurrect.SetActive(true);
+        }
+    }
+
+    public void InternalAgriculture(){
+        int cityCode = playData.playerinCity;
+        
+        Citydata cityData = GetCityData(cityCode);
+        if(cityCode == playData.playCity)
+        {
+            if(cityData != null)
+            {
+                cityData.Agriculture += 10;
+            }
+            else
+            {
+                Debug.LogError("도시 데이터를 찾을 수 없습니다. 도시 코드를 확인해 주세요.");
+            }
+        }
+        else
+        {
+            CityInCurrect.SetActive(true);
+        }
     }
 
 }

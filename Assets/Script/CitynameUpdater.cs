@@ -13,21 +13,50 @@ public class CityNameUpdater : MonoBehaviour
     public TextMeshProUGUI citypopulation;
     public TextMeshProUGUI citydevelop;
     public TextMeshProUGUI cityinfluence;
+    public TextMeshProUGUI cityAgriculture;
     public TextMeshProUGUI citySafety;
     public TextMeshProUGUI cityCommerce;
     public TextMeshProUGUI cityman;
     public TextMeshProUGUI citynoman;
     public TextMeshProUGUI cityinfluenceCity;
+    
     public Cityifo cityifoScript;
     public int citycodeifom;
 
     public TextMeshProUGUI PlayerInfluences;
-
+    public TextMeshProUGUI PlayerCity;
     public TextMeshProUGUI Action;
 
     void Start()
     {
-        cityNameText.text = "낙양";
+        Playdata playData = cityifoScript.playData;
+        TextAsset cityCodeMatchText = Resources.Load<TextAsset>("cityCodematch");
+        if (cityCodeMatchText != null)
+        {
+            string cityCodeMatchData = cityCodeMatchText.text;
+            string[] lines = cityCodeMatchData.Split('\n');
+
+            foreach (string line in lines)
+            {
+                // 각 라인을 파싱하여 도시 코드와 도시 이름을 얻습니다.
+                string[] parts = line.Split(':');
+                if (parts.Length == 2)
+                {
+                    if (int.TryParse(parts[0], out int parsedCityCode))
+                    {
+                        if (parsedCityCode == playData.playerinCity) // 현재 도시 코드와 일치하는 도시 이름을 찾았다면
+                        {
+                            cityNameText.text  = parts[1].Trim(); // 도시 이름을 얻습니다.
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        else
+        {
+            Debug.LogError("cityCodematch.txt 파일이 존재하지 않습니다.");
+        }
         timeSinceLastUpdate = 0.0f;
     }
 
@@ -49,13 +78,12 @@ public class CityNameUpdater : MonoBehaviour
             timeSinceLastUpdate = 0.0f;
         }
     }
-    public void CityName(string city)
-    {
-        cityNameText.text = city; // 문자열을 TextMeshProUGUI에 할당
-    }
 
     public void UpdateCityData(int citycodeifo)
     {
+        Playdata playData = cityifoScript.playData;
+        TextAsset cityCodeMatchText = Resources.Load<TextAsset>("cityCodematch");
+        
         citycodeifom = citycodeifo;
         if (cityNameText != null && cityifoScript != null)
         {
@@ -63,23 +91,48 @@ public class CityNameUpdater : MonoBehaviour
             // 원하는 도시 데이터에 접근하여 업데이트합니다.
             Citydata cityData = cityList[citycodeifo]; // 예: 리스트의 첫 번째 도시 데이터
 
-            Playdata playData = cityifoScript.playData;
-
             // 도시 이름을 TextMeshProUGUI에 업데이트
-            cityGold.text = "Gold: " + cityData.Gold.ToString();
-            cityMil.text = "Military: " + cityData.influence.ToString();
-            citypopulation.text = "Population: " + cityData.population.ToString();
-            citydevelop.text = "Development: " + cityData.develop.ToString();
-            cityinfluence.text = "Influence: " + cityData.influence.ToString();
-            citySafety.text = "Safety: " + cityData.Safety.ToString();
-            cityCommerce.text = "Commerce: " + cityData.Commerce.ToString();
-            cityman.text = "Male: " + cityData.man.ToString();
-            citynoman.text = "Female: " + cityData.noman.ToString();
-            cityinfluenceCity.text = "세력: " + cityData.cityinfluencname;
+            cityGold.text =  cityData.Gold.ToString();
+            cityMil.text = cityData.influence.ToString();
+            citypopulation.text =  cityData.population.ToString();
+            citydevelop.text = cityData.develop.ToString();
+            cityinfluence.text =  cityData.influence.ToString();
+            cityAgriculture.text =  cityData.Agriculture.ToString();
+            citySafety.text = cityData.Safety.ToString();
+            cityCommerce.text =  cityData.Commerce.ToString();
+            cityman.text =  cityData.man.ToString();
+            citynoman.text =  cityData.noman.ToString();
+            cityinfluenceCity.text =  cityData.cityinfluencname;
+            
             PlayerInfluences.text = "세력: "+ cityifoScript.PlayerInfluencess;
             Action.text = "행동력: " + playData.action.ToString();
+            cityNameText.text = cityData.CityName;
+            if (cityCodeMatchText != null)
+            {
+                string cityCodeMatchData = cityCodeMatchText.text;
+                string[] lines = cityCodeMatchData.Split('\n');
 
-
+                foreach (string line in lines)
+                {
+                    // 각 라인을 파싱하여 도시 코드와 도시 이름을 얻습니다.
+                    string[] parts = line.Split(':');
+                    if (parts.Length == 2)
+                    {
+                        if (int.TryParse(parts[0], out int parsedCityCode))
+                        {
+                            if (parsedCityCode == playData.playerinCity) // 현재 도시 코드와 일치하는 도시 이름을 찾았다면
+                            {
+                                PlayerCity.text  = "주인공 위치 도시: "+parts[1].Trim(); // 도시 이름을 얻습니다.
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+            else
+            {
+                Debug.LogError("cityCodematch.txt 파일이 존재하지 않습니다.");
+            }
         }
         else
         {
