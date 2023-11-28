@@ -6,7 +6,6 @@ ScriptsOnlyBuild:
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
-    - UnityEngine.U2D.Animation.BufferManager
     - UnityEngine.U2D.Animation.SpriteSkinComposite
     - UnityEngine.U2D.Animation.SpriteSkinUpdateHelper
     Unity.2D.IK.Editor.dll:
@@ -16,7 +15,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -92,56 +90,29 @@ ScriptsOnlyBuild:
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: UpdateCityData
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: UpdateCityData
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -170,20 +141,71 @@ ScriptsOnlyBuild:
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
-    methodName: CityName
+    methodName: UpdateCityData
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: Assembly-CSharp
+    fullTypeName: CityNameUpdater
+    methodName: UpdateCityData
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -239,140 +261,110 @@ ScriptsOnlyBuild:
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: InternalAgriculture
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: UpdateCityData
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: UpdateCityData
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: UpdateCityData
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: UpdateCityData
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: UpdateCityData
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: UpdateCityData
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -401,74 +393,62 @@ ScriptsOnlyBuild:
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: UpdateCityData
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: UpdateCityData
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: UpdateCityData
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: UpdateCityData
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: UpdateCityData
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: UpdateCityData
-  - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -497,38 +477,110 @@ ScriptsOnlyBuild:
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
-    methodName: CityName
+    methodName: UpdateCityData
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: Assembly-CSharp
+    fullTypeName: CityNameUpdater
+    methodName: UpdateCityData
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: Assembly-CSharp
+    fullTypeName: CityNameUpdater
+    methodName: UpdateCityData
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: Assembly-CSharp
+    fullTypeName: CityNameUpdater
+    methodName: UpdateCityData
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: Assembly-CSharp
+    fullTypeName: CityNameUpdater
+    methodName: UpdateCityData
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: Assembly-CSharp
+    fullTypeName: CityNameUpdater
+    methodName: UpdateCityData
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -557,74 +609,200 @@ ScriptsOnlyBuild:
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ClickMove
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Internaltechnology
   - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: Assembly-CSharp
     fullTypeName: CityNameUpdater
-    methodName: CityName
+    methodName: UpdateCityData
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: CityNameUpdater
+    methodName: UpdateCityData
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: Assembly-CSharp
+    fullTypeName: CityNameUpdater
+    methodName: UpdateCityData
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: Assembly-CSharp
+    fullTypeName: CityNameUpdater
+    methodName: UpdateCityData
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: Assembly-CSharp
+    fullTypeName: CityNameUpdater
+    methodName: UpdateCityData
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
+  - assembly: Assembly-CSharp
+    fullTypeName: CityNameUpdater
+    methodName: UpdateCityData
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -653,8 +831,11 @@ ScriptsOnlyBuild:
     fullTypeName: CityNameUpdater
     methodName: UpdateCityData
   - assembly: Assembly-CSharp
-    fullTypeName: CityNameUpdater
-    methodName: CityName
+    fullTypeName: Cityifo
+    methodName: ChangePlayCity
+  - assembly: Assembly-CSharp
+    fullTypeName: Cityifo
+    methodName: Move
   sceneClasses:
     Assets/Scenes/City.unity:
     - Class: 1
@@ -954,7 +1135,7 @@ ScriptsOnlyBuild:
     className: TestRunCallbackListener
   - hash:
       serializedVersion: 2
-      Hash: defef24fb64259342a9c29e98f4f356a
+      Hash: 6c1c2b854dc2c7ab9ae98f207bd79d1c
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Cityifo
@@ -1014,7 +1195,7 @@ ScriptsOnlyBuild:
     className: UnityOnDropdownValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 266f6eb499dc472dbda58a5ac8ca015b
+      Hash: ea36859e04a2e621e565690a506529b0
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CityNameUpdater
