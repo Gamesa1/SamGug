@@ -621,6 +621,27 @@ public class Cityifo : MonoBehaviour
             CityInCurrect.SetActive(true);
         }
     }
+    public void InternalInfluence(){
+        int cityCode = playData.playerinCity;
+        
+        Citydata cityData = GetCityData(cityCode);
+        if(cityCode == playData.playCity)
+        {
+            if(cityData != null)
+            {
+                cityData.influence += 10;
+            }
+            else
+            {
+                Debug.LogError("도시 데이터를 찾을 수 없습니다. 도시 코드를 확인해 주세요.");
+            }
+        }
+        else
+        {
+            CityInCurrect.SetActive(true);
+        }
+    }
+
 
 }
 
